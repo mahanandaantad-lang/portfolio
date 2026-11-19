@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #09090f;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    background: #11111c;
+    padding: 20px 8%;
+    border-bottom: 1px solid #292044;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: #a855f7;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #b76aff;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #c5c5d0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #a855f7;
+}
+
+section:not(.hero) {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #b76aff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #c5c5d0;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.cards div, .project {
+    background: #171525;
+    border: 1px solid #56318a;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.cards div:hover, .project:hover {
+    border-color: #b76aff;
+}
+
+.project {
+    max-width: 550px;
+    margin: auto;
+}
+
+.project h3 {
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #11111c;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+}
